@@ -1,27 +1,26 @@
-HTML
 <!DOCTYPE html>
 <html>
-  <head><title>NFL Analytics Demo</title>
+<head>
+    <title>NFL Analytics Demo</title>
 
-    
-<a href="#" onclick="appinsights.trackEvent({name: 'TeamViewed", properties: {Team: 'Dallas Cowboys"}}};">Cowboys</a>
-<a href="#" onclick="appinsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Kansas City Chiefs'}}};">Chiefs</a>
-    
-    <script type="text/javascript"> !function(T,l,y){var
-S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionT
-racking",E="ai.device.",...)(window,document,{
-src: "https://is.monitor.azure.com/scripts/b/ai.2.min.js",
-cfg: {
-}});
-connectionString: "InstrumentationKey=d4213ecf-3e04-4b3e-91d1-a1c7582fe414;IngestionEndpoint=https://southeastasia-1.in.applicationinsights.azure.com/;LiveEndpoint=https://southeastasia.livediagnostics.monitor.azure.com/;ApplicationId=1a4e2f86-3601-4636-aef2-032082ecdea2"
-window.appinsights.trackPageView();
-</script>
-  
-  
-  </head>
-    <body>
-      <h1>Welcome to NFL Analytic Project</h1>
-      <p>Version 2.0- Deployment Succesfull!</p>
-      <p>This site is Hosted by Azure via GitHub!</p>
-    </body>
+    <script type="text/javascript">
+        !function(T,l,y){var S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionTracking",E="ai.device.";var f=window,m=document;setTimeout(function(){var e=m.createElement(k);e.src=y.src,m.getElementsByTagName(k)[0].parentNode.appendChild(e)});try{f.appInsights=y}catch(t){console.error(t)}}(window,document,{
+            src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js",
+            cfg: {
+                connectionString: "InstrumentationKey=d4213ecf-3e04-4b3e-91d1-a1c7582fe414;IngestionEndpoint=https://southeastasia-1.in.applicationinsights.azure.com/;LiveEndpoint=https://southeastasia.livediagnostics.monitor.azure.com/;ApplicationId=1a4e2f86-3601-4636-aef2-032082ecdea2"
+            }
+        });
+        window.appInsights.trackPageView();
+    </script>
+</head>
+<body>
+    <h1>Welcome to NFL Analytic Project</h1>
+    <p>Version 2.0 - Deployment Successful!</p>
+    <p>This site is Hosted by Azure via GitHub!</p>
+
+    <a href="#" onclick="appInsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Dallas Cowboys'}});">Cowboys</a>
+    <br>
+    <a href="#" onclick="appInsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Kansas City Chiefs'}});">Chiefs</a>
+
+</body>
 </html>
