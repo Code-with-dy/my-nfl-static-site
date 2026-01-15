@@ -2,6 +2,11 @@ HTML
 <!DOCTYPE html>
 <html>
   <head><title>NFL Analytics Demo</title>
+
+    
+<a href="#" onclick="appinsights.trackEvent({name: 'TeamViewed", properties: {Team: 'Dallas Cowboys"}}};">Cowboys</a>
+<a href="#" onclick="appinsights.trackEvent({name: 'TeamViewed', properties: {Team: 'Kansas City Chiefs'}}};">Chiefs</a>
+    
     <script type="text/javascript"> !function(T,l,y){var
 S=T.location,k="script",D="connectionString",C="ingestionendpoint",I="disableExceptionT
 racking",E="ai.device.",...)(window,document,{
